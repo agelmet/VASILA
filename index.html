@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="el">
 <head>
@@ -19,7 +18,7 @@
   "@context": "https://schema.org",
   "@type": "Dentist",
   "name": "Dental Philosophy — Μυρσίνη & Άρτεμις Βασίλα",
-  "image": "https://cdn.doctoranytime.gr/profileimages/857ab561-618a-45b7-9782-1e10d7020388.jpg",
+  "image": "https://raw.githubusercontent.com/agelmet/VASILA/fc84873bcfff13521b10e3b487ed60d8c0378787/both11.jpg",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Μαντζάρου 4 & Σόλωνος",
@@ -66,7 +65,7 @@ body:not(.en) [data-en]{display:none !important}
 /* ---------- Preloader ---------- */
 #preloader{position:fixed;inset:0;z-index:9999;background:var(--ink-deep);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;transition:opacity .8s var(--ease),visibility .8s}
 #preloader.done{opacity:0;visibility:hidden}
-#preloader .pl-logo{width:86px;height:86px;border-radius:50%;object-fit:cover;opacity:0;animation:plIn 1s var(--ease-out) .1s forwards;box-shadow:0 0 0 1px rgba(168,213,201,.35),0 0 60px rgba(168,213,201,.18)}
+#preloader .pl-logo{width:auto;height:86px;object-fit:contain;opacity:0;animation:plIn 1s var(--ease-out) .1s forwards}
 #preloader .pl-name{font-family:var(--ff-display);font-weight:300;font-size:clamp(20px,4vw,30px);letter-spacing:.14em;color:var(--porcelain);text-transform:uppercase;opacity:0;animation:plIn 1s var(--ease-out) .35s forwards}
 #preloader .pl-name i{font-style:italic;color:var(--mint);text-transform:none;letter-spacing:.02em}
 #preloader svg{width:150px;height:44px;overflow:visible}
@@ -81,7 +80,7 @@ body:not(.en) [data-en]{display:none !important}
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:18px clamp(20px,5vw,56px);display:flex;align-items:center;justify-content:space-between;transition:background .45s var(--ease),box-shadow .45s,padding .45s}
 nav.solid{background:rgba(247,245,240,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(14,44,42,.08);padding:12px clamp(20px,5vw,56px)}
 .nav-brand{display:flex;align-items:center;gap:12px}
-.nav-brand img{width:46px;height:46px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 1.5px rgba(168,213,201,.6);transition:transform .5s var(--ease)}
+.nav-brand img{width:auto;height:46px;object-fit:contain;transition:transform .5s var(--ease)}
 .nav-brand:hover img{transform:rotate(-8deg) scale(1.05)}
 .nav-brand .nb-txt{display:flex;flex-direction:column;line-height:1.1}
 .nav-brand .nb-txt b{font-family:var(--ff-display);font-weight:500;font-size:17px;letter-spacing:.02em;color:var(--porcelain);transition:color .45s}
@@ -127,7 +126,7 @@ nav.solid #burger span{background:var(--ink)}
 
 /* ---------- Hero ---------- */
 header{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink-deep)}
-.hero-bg{position:absolute;inset:-8% 0;background:url('https://cdn.doctoranytime.gr/practices/f45607a6-dd4f-492b-944c-63a54a61a7ab.jpg') center/cover no-repeat;will-change:transform;animation:heroZoom 16s var(--ease) forwards;filter:saturate(.92)}
+.hero-bg{position:absolute;inset:-8% 0;background:url('https://raw.githubusercontent.com/agelmet/VASILA/fc84873bcfff13521b10e3b487ed60d8c0378787/spa1.jpg') center/cover no-repeat;will-change:transform;animation:heroZoom 16s var(--ease) forwards;filter:saturate(.92)}
 @keyframes heroZoom{from{transform:scale(1.14)}to{transform:scale(1.02)}}
 .hero-scrim{position:absolute;inset:0;background:linear-gradient(196deg,rgba(9,32,32,.28) 0%,rgba(9,32,32,.55) 46%,rgba(9,32,32,.92) 100%)}
 .hero-grain{position:absolute;inset:0;opacity:.5;mix-blend-mode:overlay;background:radial-gradient(ellipse at 70% 20%,rgba(168,213,201,.16),transparent 55%)}
@@ -270,11 +269,8 @@ h2 em{font-style:italic;font-weight:400;color:var(--brass)}
 .gal figure:hover img{transform:scale(1.07);filter:brightness(1.04)}
 .gal figure::after{content:"⤢";position:absolute;right:16px;bottom:14px;width:38px;height:38px;border-radius:50%;background:rgba(9,32,32,.6);backdrop-filter:blur(6px);color:var(--mint);display:flex;align-items:center;justify-content:center;font-size:17px;opacity:0;transform:translateY(8px);transition:all .4s var(--ease)}
 .gal figure:hover::after{opacity:1;transform:none}
-.g1{grid-column:span 7;aspect-ratio:16/10}
-.g2{grid-column:span 5;aspect-ratio:4/3.6}
-.g3{grid-column:span 4;aspect-ratio:1/1}
-.g4{grid-column:span 4;aspect-ratio:1/1}
-.g5{grid-column:span 4;aspect-ratio:1/1}
+.g1{grid-column:span 6;aspect-ratio:16/10}
+.g2{grid-column:span 6;aspect-ratio:16/10}
 
 /* ---------- Reviews ---------- */
 #reviews{background:var(--ink-deep);color:var(--porcelain);overflow:hidden}
@@ -323,18 +319,21 @@ h2 em{font-style:italic;font-weight:400;color:var(--brass)}
 .ct-social a:hover svg{fill:var(--mint)}
 .ct-map{border-radius:24px;overflow:hidden;box-shadow:0 30px 70px rgba(14,44,42,.18);position:sticky;top:110px}
 .ct-map iframe{width:100%;height:520px;border:0;display:block;filter:saturate(.85)}
-.ct-cta-card{background:var(--ink);color:var(--porcelain);border-radius:24px;padding:clamp(30px,3.6vw,46px);margin-top:clamp(56px,7vw,84px);display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;position:relative;overflow:hidden}
+.ct-cta-card{background:var(--ink);color:var(--porcelain);border-radius:24px;margin-top:clamp(56px,7vw,84px);display:flex;align-items:stretch;flex-wrap:wrap;position:relative;overflow:hidden}
 .ct-cta-card::before{content:"";position:absolute;top:-120px;right:-80px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(168,213,201,.2),transparent 65%)}
-.ct-cta-card h3{font-family:var(--ff-display);font-weight:300;font-size:clamp(24px,3vw,36px);line-height:1.2}
-.ct-cta-card h3 em{font-style:italic;color:var(--mint)}
-.ct-cta-card p{color:rgba(247,245,240,.7);font-weight:300;font-size:15px;margin-top:8px}
+.ct-cta-img{flex:1 1 300px;position:relative;min-height:300px}
+.ct-cta-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.ct-cta-content{flex:1 1 300px;padding:clamp(36px,5vw,64px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:24px;position:relative;z-index:1}
+.ct-cta-content h3{font-family:var(--ff-display);font-weight:300;font-size:clamp(24px,3vw,36px);line-height:1.2;margin:0}
+.ct-cta-content h3 em{font-style:italic;color:var(--mint)}
+.ct-cta-content p{color:rgba(247,245,240,.7);font-weight:300;font-size:15px;margin-top:8px}
 
 /* ---------- Footer ---------- */
 footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp(20px,5vw,56px) 34px}
 .ft-in{max-width:1280px;margin:0 auto}
 .ft-top{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;padding-bottom:34px;border-bottom:1px solid rgba(168,213,201,.14)}
 .ft-brand{display:flex;align-items:center;gap:14px}
-.ft-brand img{width:52px;height:52px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 1.5px rgba(168,213,201,.4)}
+.ft-brand img{width:auto;height:52px;object-fit:contain}
 .ft-brand b{font-family:var(--ff-display);font-weight:400;font-size:19px;color:var(--porcelain);display:block;line-height:1.2}
 .ft-brand span{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mint)}
 .ft-links{display:flex;gap:24px;flex-wrap:wrap}
@@ -372,7 +371,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   .phi-grid{grid-template-columns:1fr;max-width:560px;margin-left:auto;margin-right:auto;margin-top:46px}
   .rev-cols{grid-template-columns:repeat(2,1fr)}
   .rev-col:nth-child(3){display:none}
-  .g1{grid-column:span 12}.g2{grid-column:span 12;aspect-ratio:16/9}.g3,.g4{grid-column:span 6}.g5{grid-column:span 12;aspect-ratio:16/8}
+  .g1,.g2{grid-column:span 12;aspect-ratio:16/9}
 }
 @media(max-width:860px){
   .nav-links{display:none}
@@ -391,7 +390,6 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
 @media(max-width:640px){
   .rev-cols{grid-template-columns:1fr;height:560px}
   .rev-col:nth-child(2){display:none}
-  .g3,.g4{grid-column:span 12;aspect-ratio:4/3}
   .btn{width:100%;justify-content:center}
   .hero-ctas{width:100%}
   .about-marks{gap:22px}
@@ -407,14 +405,12 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
 
 <div id="progress"></div>
 
-<!-- Preloader -->
 <div id="preloader" aria-hidden="true">
   <img class="pl-logo" src="https://raw.githubusercontent.com/agelmet/VASILA/main/Gemini_Generated_Image_v5c2t8v5c2t8v5c2.png" alt="Dental Philosophy">
   <div class="pl-name">Dental <i>Philosophy</i></div>
   <svg viewBox="0 0 150 44"><path d="M6 8 C 40 52, 110 52, 144 8"/></svg>
 </div>
 
-<!-- Nav -->
 <nav id="nav">
   <a href="#top" class="nav-brand">
     <img src="https://raw.githubusercontent.com/agelmet/VASILA/main/Gemini_Generated_Image_v5c2t8v5c2t8v5c2.png" alt="Dental Philosophy logo">
@@ -443,7 +439,6 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   <button id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
-<!-- Mobile menu -->
 <div id="mmenu" aria-hidden="true">
   <button id="mclose" aria-label="Close menu"><svg viewBox="0 0 20 20"><path d="M3 3 L17 17 M17 3 L3 17"/></svg></button>
   <a href="#about"><span data-el>Το Ιατρείο</span><span data-en>The Practice</span></a>
@@ -459,7 +454,6 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   </div>
 </div>
 
-<!-- Hero -->
 <header id="top">
   <div class="hero-bg" id="heroBg"></div>
   <div class="hero-scrim"></div>
@@ -480,8 +474,8 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
       <span class="w"><i style="animation-delay:2.05s">Your</i></span> <span class="w"><i style="animation-delay:2.15s">smile,</i></span><br>
       <span class="w"><i style="animation-delay:2.35s">with</i></span> <em><span class="w"><i style="animation-delay:2.45s">philosophy</i></span><svg viewBox="0 0 300 30" preserveAspectRatio="none"><path d="M4 6 C 90 34, 210 34, 296 6"/></svg></em><span class="w"><i style="animation-delay:2.55s">.</i></span>
     </h1>
-    <p class="hero-sub" data-el>Στην καρδιά του Κολωνακίου, οι αδελφές Μυρσίνη &amp; Άρτεμις Βασίλα συνδυάζουν επιστημονική ακρίβεια, ψηφιακή τεχνολογία και πραγματική ανθρώπινη φροντίδα — για μια εμπειρία στον οδοντίατρο που θα αλλάξει την ιδέα που είχατε μέχρι σήμερα.</p>
-    <p class="hero-sub" data-en>In the heart of Kolonaki, sisters Myrsini &amp; Artemis Vasila combine scientific precision, digital technology and genuinely human care — for a dental experience that will change everything you thought you knew about visiting the dentist.</p>
+    <p class="hero-sub" data-el>Στην καρδιά του Κολωνακίου, οι αδελφές Μυρσίνη & Άρτεμις Βασίλα συνδυάζουν επιστημονική ακρίβεια, ψηφιακή τεχνολογία και πραγματική ανθρώπινη φροντίδα — για μια εμπειρία στον οδοντίατρο που θα αλλάξει την ιδέα που είχατε μέχρι σήμερα.</p>
+    <p class="hero-sub" data-en>In the heart of Kolonaki, sisters Myrsini & Artemis Vasila combine scientific precision, digital technology and genuinely human care — for a dental experience that will change everything you thought you knew about visiting the dentist.</p>
     <div class="hero-ctas">
       <a class="btn btn-primary" href="https://www.doctoranytime.gr/d/Odontiatros/dental-philosophy-myrsini-artemis-vasila" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
@@ -496,7 +490,6 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   <div class="hero-scroll"><span data-el>Κύλιση</span><span data-en>Scroll</span></div>
 </header>
 
-<!-- Marquee -->
 <div class="marquee" aria-hidden="true">
   <div class="mq-track" id="mqTrack">
     <div class="mq-set" style="display:flex">
@@ -511,14 +504,13 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   </div>
 </div>
 
-<!-- About -->
 <section id="about">
   <div class="wrap">
     <div class="about-grid">
       <div class="about-img rv-scale">
         <div class="ai-frame"></div>
         <div class="ai-main lb-item" data-cap-el="Μυρσίνη & Άρτεμις Βασίλα" data-cap-en="Myrsini & Artemis Vasila">
-          <img src="https://cdn.doctoranytime.gr/profileimages/857ab561-618a-45b7-9782-1e10d7020388.jpg" alt="Μυρσίνη και Άρτεμις Βασίλα - Dental Philosophy" loading="lazy">
+          <img src="https://raw.githubusercontent.com/agelmet/VASILA/fc84873bcfff13521b10e3b487ed60d8c0378787/both11.jpg" alt="Μυρσίνη και Άρτεμις Βασίλα - Dental Philosophy" loading="lazy">
         </div>
         <div class="ai-chip">
           <div class="num">10.0</div>
@@ -529,8 +521,8 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
         <div class="eyebrow rv"><span data-el>Το Ιατρειο</span><span data-en>The Practice</span></div>
         <h2 class="rv d1" data-el>Δύο αδελφές, <em>μία φιλοσοφία</em> για την οδοντιατρική.</h2>
         <h2 class="rv d1" data-en>Two sisters, <em>one philosophy</em> of dentistry.</h2>
-        <p class="rv d2" data-el>Στη γωνία <b>Μαντζάρου 4 &amp; Σόλωνος</b>, λίγα βήματα από την πλατεία Κολωνακίου, το <b>Dental Philosophy</b> δεν είναι ένα ακόμη οδοντιατρείο. Είναι ο χώρος όπου η επιστημονική εξειδίκευση συναντά την προηγμένη ψηφιακή τεχνολογία και τη φροντίδα που θα περιμένατε από ανθρώπους που αγαπούν πραγματικά αυτό που κάνουν.</p>
-        <p class="rv d2" data-en>On the corner of <b>Mantzarou 4 &amp; Solonos</b>, just steps from Kolonaki Square, <b>Dental Philosophy</b> is not just another dental practice. It is a space where scientific expertise meets advanced digital technology and the kind of care you'd expect from people who genuinely love what they do.</p>
+        <p class="rv d2" data-el>Στη γωνία <b>Μαντζάρου 4 & Σόλωνος</b>, λίγα βήματα από την πλατεία Κολωνακίου, το <b>Dental Philosophy</b> δεν είναι ένα ακόμη οδοντιατρείο. Είναι ο χώρος όπου η επιστημονική εξειδίκευση συναντά την προηγμένη ψηφιακή τεχνολογία και τη φροντίδα που θα περιμένατε από ανθρώπους που αγαπούν πραγματικά αυτό που κάνουν.</p>
+        <p class="rv d2" data-en>On the corner of <b>Mantzarou 4 & Solonos</b>, just steps from Kolonaki Square, <b>Dental Philosophy</b> is not just another dental practice. It is a space where scientific expertise meets advanced digital technology and the kind of care you'd expect from people who genuinely love what they do.</p>
         <p class="rv d3" data-el>Πιστεύουμε ότι η άριστη οδοντιατρική δεν αφορά μόνο τη θεραπεία. Αφορά την <b>εμπιστοσύνη</b>, τη <b>διακριτικότητα</b> και την <b>προσοχή στη λεπτομέρεια</b> — από την ακριβή διάγνωση και τον ψηφιακό σχεδιασμό, μέχρι το ήρεμο περιβάλλον που σας υποδέχεται σε κάθε επίσκεψη.</p>
         <p class="rv d3" data-en>We believe excellent dentistry is not only about treatment. It is about <b>trust</b>, <b>discretion</b> and <b>attention to detail</b> — from precise diagnosis and digital treatment planning, to the calm environment that welcomes you at every visit.</p>
         <div class="about-marks rv d4">
@@ -545,7 +537,6 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
 
 <svg class="arc-divider" viewBox="0 0 200 52" aria-hidden="true"><path d="M10 10 C 60 62, 140 62, 190 10"/></svg>
 
-<!-- Doctors -->
 <section id="doctors">
   <div class="wrap">
     <div class="doc-head">
@@ -558,11 +549,11 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
 
     <div class="doc-card">
       <div class="doc-photo rv-scale lb-item" data-cap-el="Άρτεμις Βασίλα, DDS, MSc" data-cap-en="Artemis Vasila, DDS, MSc">
-        <div class="dp-img"><img src="https://cdn.doctoranytime.gr/practices/9495dc0d-0a25-4c03-bb59-d1e603f46b70.jpg" alt="Άρτεμις Βασίλα - Οδοντίατρος" loading="lazy"></div>
+        <div class="dp-img"><img src="https://raw.githubusercontent.com/agelmet/VASILA/fc84873bcfff13521b10e3b487ed60d8c0378787/arf1.jpg" alt="Άρτεμις Βασίλα - Οδοντίατρος" loading="lazy"></div>
         <div class="dp-role"><span data-el>Ορθοδοντικη</span><span data-en>Orthodontics</span></div>
       </div>
       <div class="doc-info">
-        <div class="dn rv">Άρτεμις <i>Βασίλα</i></div>
+        <div class="dn rv"><span data-el>Άρτεμις</span><span data-en>Artemis</span> <i><span data-el>Βασίλα</span><span data-en>Vasila</span></i></div>
         <div class="dq rv d1">DDS, MSc · <span data-el>Χειρουργος Οδοντιατρος</span><span data-en>Dental Surgeon</span></div>
         <p class="rv d2" data-el>Αποφοίτησε με <b style="color:var(--ink);font-weight:600">Άριστα</b> από το Ιατρικό Πανεπιστήμιο της Σόφιας το 2018 και συνέχισε με μεταπτυχιακές σπουδές στην Ορθοδοντική (MSc) στο Πανεπιστήμιο του Κρεμς, στην Αυστρία.</p>
         <p class="rv d2" data-en>She graduated <b style="color:var(--ink);font-weight:600">with Honours</b> from the Medical University of Sofia in 2018 and continued with postgraduate studies in Orthodontics (MSc) at the University of Krems, Austria.</p>
@@ -579,11 +570,11 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
 
     <div class="doc-card flip">
       <div class="doc-photo rv-scale lb-item" data-cap-el="Μυρσίνη Βασίλα, BSc, DDS" data-cap-en="Myrsini Vasila, BSc, DDS">
-        <div class="dp-img"><img src="https://dentalsmiles.gr/wp-content/uploads/2026/06/mirsini-1.png" alt="Μυρσίνη Βασίλα - Οδοντίατρος" loading="lazy"></div>
+        <div class="dp-img"><img src="https://raw.githubusercontent.com/agelmet/VASILA/fc84873bcfff13521b10e3b487ed60d8c0378787/myrsa1.jpg" alt="Μυρσίνη Βασίλα - Οδοντίατρος" loading="lazy"></div>
         <div class="dp-role"><span data-el>Παιδοδοντια</span><span data-en>Paediatric Dentistry</span></div>
       </div>
       <div class="doc-info">
-        <div class="dn rv">Μυρσίνη <i>Βασίλα</i></div>
+        <div class="dn rv"><span data-el>Μυρσίνη</span><span data-en>Myrsini</span> <i><span data-el>Βασίλα</span><span data-en>Vasila</span></i></div>
         <div class="dq rv d1">BSc, DDS · <span data-el>Χειρουργος Οδοντιατρος</span><span data-en>Dental Surgeon</span></div>
         <p class="rv d2" data-el>Απόφοιτος του Τμήματος Βιολογίας του Πανεπιστημίου Κρήτης και του Ιατρικού Πανεπιστημίου της Σόφιας, από όπου αποφοίτησε με <b style="color:var(--ink);font-weight:600">Άριστα</b> το 2019, με Δίπλωμα στην Παιδοδοντική Οδοντιατρική από το Διεθνές Πανεπιστήμιο της Βαρκελώνης (UIC).</p>
         <p class="rv d2" data-en>A graduate of the Biology Department of the University of Crete and the Medical University of Sofia, from which she graduated <b style="color:var(--ink);font-weight:600">with Honours</b> in 2019, holding a Diploma in Paediatric Dentistry from the International University of Barcelona (UIC).</p>
@@ -591,8 +582,8 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
         <p class="rv d3" data-en>Her clinical work focuses on the care of infants, children, teenagers and people with disabilities or increased care needs — with patience, empathy and absolute respect for the unique needs of every young patient.</p>
         <div class="doc-tags rv d4">
           <span data-el>Παιδοδοντία</span><span data-en>Paediatric Dentistry</span>
-          <span data-el>ΑμεΑ &amp; Ειδικές Ανάγκες</span><span data-en>Special Care Dentistry</span>
-          <span data-el>Πρόληψη &amp; Φθορίωση</span><span data-en>Prevention &amp; Fluoride</span>
+          <span data-el>ΑμεΑ & Ειδικές Ανάγκες</span><span data-en>Special Care Dentistry</span>
+          <span data-el>Πρόληψη & Φθορίωση</span><span data-en>Prevention & Fluoride</span>
           <span data-el>Δίπλωμα UIC Βαρκελώνης</span><span data-en>UIC Barcelona Diploma</span>
         </div>
       </div>
@@ -600,7 +591,6 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   </div>
 </section>
 
-<!-- Philosophy -->
 <section id="philosophy">
   <div class="wrap">
     <div class="eyebrow rv" style="color:var(--mint)"><span data-el>Η Φιλοσοφια μας</span><span data-en>Our Philosophy</span></div>
@@ -636,7 +626,6 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   </div>
 </section>
 
-<!-- Services -->
 <section id="services">
   <div class="wrap">
     <div class="eyebrow rv"><span data-el>Υπηρεσιες</span><span data-en>Services</span></div>
@@ -647,7 +636,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
     <div class="srv-grid">
       <div class="srv rv d1">
         <div class="s-ico"><svg viewBox="0 0 24 24"><path d="M12 3a7 7 0 0 1 7 7c0 3-1 4-1.5 7-.3 1.8-1 4-2.5 4s-1.5-2-3-2-1.5 2-3 2-2.2-2.2-2.5-4C6 14 5 13 5 10a7 7 0 0 1 7-7z"/><path d="M9 8c1-1 2-1 3 0"/></svg></div>
-        <h3 data-el>Καθαρισμός &amp; Πρόληψη</h3><h3 data-en>Cleaning &amp; Prevention</h3>
+        <h3 data-el>Καθαρισμός & Πρόληψη</h3><h3 data-en>Cleaning & Prevention</h3>
         <p data-el>Λεπτομερής καθαρισμός με ελαφρύ χέρι, στίλβωση, φθορίωση και σοδοβολή — η βάση για υγιή δόντια για μια ζωή.</p>
         <p data-en>Gentle, thorough cleaning, polishing, fluoride treatment and air polishing — the foundation of lifelong dental health.</p>
       </div>
@@ -672,7 +661,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
       </div>
       <div class="srv rv d1">
         <div class="s-ico"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="6"/><path d="M8 12h8"/></svg></div>
-        <h3 data-el>Όψεις Ρητίνης &amp; Αισθητική</h3><h3 data-en>Composite Veneers &amp; Aesthetics</h3>
+        <h3 data-el>Όψεις Ρητίνης & Αισθητική</h3><h3 data-en>Composite Veneers & Aesthetics</h3>
         <p data-el>Όψεις ρητίνης, σφραγίσματα με αισθητική προσέγγιση, αντιμετώπιση λευκών κηλίδων και οδοντιατρικό κόσμημα.</p>
         <p data-en>Composite veneers, aesthetic fillings, white-spot treatment and tooth gems.</p>
       </div>
@@ -690,19 +679,18 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
       </div>
       <div class="srv rv d4">
         <div class="s-ico"><svg viewBox="0 0 24 24"><path d="M4 16c0-5 3-9 8-9s8 4 8 9"/><rect x="2" y="16" width="20" height="4" rx="2"/></svg></div>
-        <h3 data-el>Προσθετική &amp; Εμφυτεύματα</h3><h3 data-en>Prosthetics &amp; Implants</h3>
+        <h3 data-el>Προσθετική & Εμφυτεύματα</h3><h3 data-en>Prosthetics & Implants</h3>
         <p data-el>Στεφάνες, γέφυρες, ολικές και μερικές οδοντοστοιχίες, εμφυτεύματα και νάρθηκες βρυγμού — αποκατάσταση με φυσικό αποτέλεσμα.</p>
         <p data-en>Crowns, bridges, full and partial dentures, implants and bruxism splints — restorations with a natural result.</p>
       </div>
     </div>
-    <p class="srv-note rv" data-el>Αναλαμβάνουμε και περιστατικά παιδιών, καθώς και κατ' οίκον επισκέψεις &amp; συνεδρίες μέσω βιντεοκλήσης. <a href="https://www.doctoranytime.gr/d/Odontiatros/dental-philosophy-myrsini-artemis-vasila" target="_blank" rel="noopener">Δείτε όλες τις υπηρεσίες →</a></p>
-    <p class="srv-note rv" data-en>We also welcome children's cases and offer home visits &amp; video consultations. <a href="https://www.doctoranytime.gr/en/d/Odontiatros/dental-philosophy-myrsini-artemis-vasila" target="_blank" rel="noopener">See all services →</a></p>
+    <p class="srv-note rv" data-el>Αναλαμβάνουμε και περιστατικά παιδιών, καθώς και κατ' οίκον επισκέψεις & συνεδρίες μέσω βιντεοκλήσης. <a href="https://www.doctoranytime.gr/d/Odontiatros/dental-philosophy-myrsini-artemis-vasila" target="_blank" rel="noopener">Δείτε όλες τις υπηρεσίες →</a></p>
+    <p class="srv-note rv" data-en>We also welcome children's cases and offer home visits & video consultations. <a href="https://www.doctoranytime.gr/en/d/Odontiatros/dental-philosophy-myrsini-artemis-vasila" target="_blank" rel="noopener">See all services →</a></p>
   </div>
 </section>
 
 <svg class="arc-divider" viewBox="0 0 200 52" aria-hidden="true"><path d="M10 10 C 60 62, 140 62, 190 10"/></svg>
 
-<!-- Space -->
 <section id="space">
   <div class="wrap">
     <div class="eyebrow rv"><span data-el>Ο Χωρος</span><span data-en>The Space</span></div>
@@ -711,16 +699,12 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
     <p class="lead rv d2" data-el>Φωτεινό, ήρεμο και πεντακάθαρο, με υπερσύγχρονο εξοπλισμό — σχεδιασμένο για να ξεχνάτε το άγχος από τη στιγμή που θα περάσετε την πόρτα.</p>
     <p class="lead rv d2" data-en>Bright, calm and immaculately clean, with state-of-the-art equipment — designed to make you forget your anxiety the moment you walk through the door.</p>
     <div class="gal">
-      <figure class="g1 rv lb-item" data-cap-el="Ο χώρος υποδοχής" data-cap-en="The reception area"><img src="https://cdn.doctoranytime.gr/practices/f45607a6-dd4f-492b-944c-63a54a61a7ab.jpg" alt="Dental Philosophy - χώρος ιατρείου" loading="lazy"></figure>
-      <figure class="g2 rv d1 lb-item" data-cap-el="Το ιατρείο" data-cap-en="The clinic"><img src="https://cdn.doctoranytime.gr/practices/4f375a1c-6f00-4530-9ce1-1bae11a3317e.jpg" alt="Dental Philosophy - ιατρείο" loading="lazy"></figure>
-      <figure class="g3 rv d1 lb-item" data-cap-el="Σύγχρονος εξοπλισμός" data-cap-en="Modern equipment"><img src="https://cdn.doctoranytime.gr/practices/65608dba-9004-44d1-8e3e-78b300b6c34f.jpg" alt="Dental Philosophy - εξοπλισμός" loading="lazy"></figure>
-      <figure class="g4 rv d2 lb-item" data-cap-el="Λεπτομέρειες του χώρου" data-cap-en="Details of the space"><img src="https://cdn.doctoranytime.gr/practices/17c8bfd8-e660-4727-9161-05ac36d08a20.jpg" alt="Dental Philosophy - λεπτομέρειες χώρου" loading="lazy"></figure>
-      <figure class="g5 rv d3 lb-item" data-cap-el="Το περιβάλλον του ιατρείου" data-cap-en="The clinic environment"><img src="https://cdn.doctoranytime.gr/practices/e98f3919-be48-480c-a5cf-c30c5fac433e.jpg" alt="Dental Philosophy - περιβάλλον ιατρείου" loading="lazy"></figure>
+      <figure class="g1 rv lb-item" data-cap-el="Ο χώρος υποδοχής" data-cap-en="The reception area"><img src="https://raw.githubusercontent.com/agelmet/VASILA/fc84873bcfff13521b10e3b487ed60d8c0378787/spa1.jpg" alt="Dental Philosophy - χώρος ιατρείου" loading="lazy"></figure>
+      <figure class="g2 rv d1 lb-item" data-cap-el="Το ιατρείο" data-cap-en="The clinic"><img src="https://raw.githubusercontent.com/agelmet/VASILA/fc84873bcfff13521b10e3b487ed60d8c0378787/sp221.jpg" alt="Dental Philosophy - ιατρείο" loading="lazy"></figure>
     </div>
   </div>
 </section>
 
-<!-- Reviews -->
 <section id="reviews">
   <div class="wrap">
     <div class="rev-topline">
@@ -754,7 +738,6 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   </div>
 </section>
 
-<!-- Contact -->
 <section id="contact">
   <div class="wrap">
     <div class="ct-grid">
@@ -769,7 +752,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
             <div class="c-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
             <div>
               <small data-el>Διευθυνση</small><small data-en>Address</small>
-              <div class="c-val"><a href="https://maps.google.com/?q=Μαντζάρου+4+%26+Σόλωνος,+Κολωνάκι,+Αθήνα" target="_blank" rel="noopener"><span data-el>Μαντζάρου 4 &amp; Σόλωνος, Κολωνάκι</span><span data-en>Mantzarou 4 &amp; Solonos, Kolonaki</span></a></div>
+              <div class="c-val"><a href="https://maps.google.com/?q=Μαντζάρου+4+%26+Σόλωνος,+Κολωνάκι,+Αθήνα" target="_blank" rel="noopener"><span data-el>Μαντζάρου 4 & Σόλωνος, Κολωνάκι</span><span data-en>Mantzarou 4 & Solonos, Kolonaki</span></a></div>
               <div class="c-sub" data-el>Αθήνα, Αττική · Μετρό: Πανεπιστήμιο (350μ.)</div>
               <div class="c-sub" data-en>Athens, Attica · Metro: Panepistimio (350m)</div>
             </div>
@@ -810,22 +793,28 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
         <iframe title="Dental Philosophy - Χάρτης" src="https://www.google.com/maps?q=%CE%9C%CE%B1%CE%BD%CF%84%CE%B6%CE%AC%CF%81%CE%BF%CF%85%204%20%26%20%CE%A3%CF%8C%CE%BB%CF%89%CE%BD%CE%BF%CF%82%2C%20%CE%9A%CE%BF%CE%BB%CF%89%CE%BD%CE%AC%CE%BA%CE%B9%2C%20%CE%91%CE%B8%CE%AE%CE%BD%CE%B1&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
       </div>
     </div>
+    
     <div class="ct-cta-card rv">
-      <div style="position:relative;z-index:1">
-        <h3 data-el>Έτοιμοι να <em>χαμογελάσετε</em> ξανά;</h3>
-        <h3 data-en>Ready to <em>smile</em> again?</h3>
-        <p data-el>Κλείστε το ραντεβού σας online, σε λιγότερο από ένα λεπτό.</p>
-        <p data-en>Book your appointment online, in under a minute.</p>
+      <div class="ct-cta-img">
+        <img src="https://raw.githubusercontent.com/agelmet/VASILA/fc84873bcfff13521b10e3b487ed60d8c0378787/both1.jpg" alt="Μυρσίνη & Άρτεμις Βασίλα" loading="lazy">
       </div>
-      <a class="btn btn-primary" style="position:relative;z-index:1" href="https://www.doctoranytime.gr/d/Odontiatros/dental-philosophy-myrsini-artemis-vasila" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-        <span data-el>Κλείστε Ραντεβού</span><span data-en>Book Appointment</span>
-      </a>
+      <div class="ct-cta-content">
+        <div>
+          <h3 data-el>Έτοιμοι να <em>χαμογελάσετε</em> ξανά;</h3>
+          <h3 data-en>Ready to <em>smile</em> again?</h3>
+          <p data-el>Κλείστε το ραντεβού σας online, σε λιγότερο από ένα λεπτό.</p>
+          <p data-en>Book your appointment online, in under a minute.</p>
+        </div>
+        <a class="btn btn-primary" href="https://www.doctoranytime.gr/d/Odontiatros/dental-philosophy-myrsini-artemis-vasila" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          <span data-el>Κλείστε Ραντεβού</span><span data-en>Book Appointment</span>
+        </a>
+      </div>
     </div>
+
   </div>
 </section>
 
-<!-- Footer -->
 <footer>
   <div class="ft-in">
     <div class="ft-top">
@@ -833,7 +822,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
         <img src="https://raw.githubusercontent.com/agelmet/VASILA/main/Gemini_Generated_Image_v5c2t8v5c2t8v5c2.png" alt="Dental Philosophy logo">
         <div>
           <b>Dental Philosophy</b>
-          <span data-el>Μυρσινη &amp; Αρτεμις Βασιλα</span><span data-en>Myrsini &amp; Artemis Vasila</span>
+          <span data-el>Μυρσινη & Αρτεμις Βασιλα</span><span data-en>Myrsini & Artemis Vasila</span>
         </div>
       </div>
       <div class="ft-links">
@@ -845,14 +834,13 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
       </div>
     </div>
     <div class="ft-bottom">
-      <span data-el>© <span id="yr">2026</span> Dental Philosophy · Μαντζάρου 4 &amp; Σόλωνος, Κολωνάκι, Αθήνα</span>
-      <span data-en>© <span>2026</span> Dental Philosophy · Mantzarou 4 &amp; Solonos, Kolonaki, Athens</span>
+      <span data-el>© <span id="yr">2026</span> Dental Philosophy · Μαντζάρου 4 & Σόλωνος, Κολωνάκι, Αθήνα</span>
+      <span data-en>© <span id="yr-en">2026</span> Dental Philosophy · Mantzarou 4 & Solonos, Kolonaki, Athens</span>
       <span>Designed by <a href="https://www.advonmedia.com" target="_blank" rel="noopener">Advon Media</a></span>
     </div>
   </div>
 </footer>
 
-<!-- Lightbox -->
 <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
   <button class="lb-btn" id="lb-close" aria-label="Close"><svg viewBox="0 0 20 20"><path d="M3 3 L17 17 M17 3 L3 17"/></svg></button>
   <button class="lb-btn" id="lb-prev" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
@@ -939,6 +927,7 @@ var body=document.body;
 function setLang(en){
   body.classList.toggle('en',en);
   document.documentElement.lang=en?'en':'el';
+  document.title=en?"Dental Philosophy — Myrsini & Artemis Vasila | Dentists Kolonaki":"Dental Philosophy — Μυρσίνη & Άρτεμις Βασίλα | Οδοντίατροι Κολωνάκι";
   document.querySelectorAll('#btn-el,.mm-el').forEach(function(b){b.classList.toggle('active',!en)});
   document.querySelectorAll('#btn-en,.mm-en').forEach(function(b){b.classList.toggle('active',en)});
   try{localStorage.setItem('dp-lang',en?'en':'el')}catch(e){}
@@ -1031,6 +1020,7 @@ document.addEventListener('keydown',function(e){
 
 /* ---------- Year ---------- */
 var yr=document.getElementById('yr');if(yr)yr.textContent=new Date().getFullYear();
+var yren=document.getElementById('yr-en');if(yren)yren.textContent=new Date().getFullYear();
 })();
 </script>
 </body>
