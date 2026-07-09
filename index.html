@@ -265,8 +265,7 @@ h2 em{font-style:italic;font-weight:400;color:var(--brass)}
 .gal figure:hover img{transform:scale(1.03);filter:brightness(1.02)}
 .gal figure::after{content:"⤢";position:absolute;right:16px;bottom:14px;width:38px;height:38px;border-radius:50%;background:rgba(9,32,32,.6);backdrop-filter:blur(6px);color:var(--mint);display:flex;align-items:center;justify-content:center;font-size:17px;opacity:0;transform:translateY(8px);transition:all .4s var(--ease);z-index:2}
 .gal figure:hover::after{opacity:1;transform:none}
-.g1{grid-column:span 6}
-.g2{grid-column:span 6}
+.g1, .g2, .g3 {grid-column:span 4}
 
 /* ---------- Reviews ---------- */
 #reviews{background:var(--ink-deep);color:var(--porcelain);overflow:hidden}
@@ -365,7 +364,8 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   .phi-grid{grid-template-columns:1fr;max-width:560px;margin-left:auto;margin-right:auto;margin-top:46px}
   .rev-cols{grid-template-columns:repeat(2,1fr)}
   .rev-col:nth-child(3){display:none}
-  .g1,.g2{grid-column:span 12}
+  .g1{grid-column:span 12}
+  .g2, .g3{grid-column:span 6}
 }
 @media(max-width:860px){
   .nav-links{display:none}
@@ -386,6 +386,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   .btn{width:100%;justify-content:center}
   .hero-ctas{width:100%}
   .about-marks{gap:22px}
+  .g1, .g2, .g3{grid-column:span 12}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001s!important;animation-delay:0s!important;transition-duration:.001s!important}
@@ -690,6 +691,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
     <div class="gal">
       <figure class="g1 rv lb-item" data-cap-el="Ο χώρος υποδοχής" data-cap-en="The reception area"><img src="https://raw.githubusercontent.com/agelmet/VASILA/fc84873bcfff13521b10e3b487ed60d8c0378787/spa1.jpg" alt="Dental Philosophy - χώρος ιατρείου" loading="lazy"></figure>
       <figure class="g2 rv d1 lb-item" data-cap-el="Το ιατρείο" data-cap-en="The clinic"><img src="https://raw.githubusercontent.com/agelmet/VASILA/fc84873bcfff13521b10e3b487ed60d8c0378787/sp221.jpg" alt="Dental Philosophy - ιατρείο" loading="lazy"></figure>
+      <figure class="g3 rv d2 lb-item" data-cap-el="Λεπτομέρειες του χώρου" data-cap-en="Details of the space"><img src="https://github.com/agelmet/VASILA/blob/main/vasilaextra.jpg?raw=true" alt="Dental Philosophy - λεπτομέρειες" loading="lazy"></figure>
     </div>
   </div>
 </section>
@@ -856,7 +858,7 @@ var REVIEWS=[
 ["Κωνσταντίνα","10.0","Πολύ καλή εμπειρία! Έκανα καθαρισμό για αντιμετώπιση περιοδοντίτιδας και έμεινα απόλυτα ευχαριστημένη. Πολύ ευγενικές, προσεκτικές και επαγγελματίες, με έκαναν να νιώσω άνετα από την πρώτη στιγμή. Τις προτείνω σίγουρα!"],
 ["ΑΓΑΠΗ","10.0","Εξαιρετικές γιατροί και οι δύο, με πραγματικό ενδιαφέρον για τον ασθενή. Από την πρώτη στιγμή με έκαναν να νιώσω άνετα και ασφαλής, εξηγώντας μου με ηρεμία κάθε βήμα της διαδικασίας. Πολύ προσεκτικές στη δουλειά τους, ευγενικές, ανθρώπινες και με επαγγελματισμό που εμπνέει εμπιστοσύνη. Τις συστήνω ανεπιφύλακτα!"],
 ["Βαρβάρα","10.0","Η εμπειρία μου με τις οδοντιάτρους Άρτεμις και Μυρσίνη ήταν πραγματικά εξαιρετική! Από την πρώτη στιγμή με έκαναν να νιώσω άνετα και ασφαλής με την ευγένεια, τον επαγγελματισμό και το χαμόγελό τους. Είναι και οι δύο άρτια καταρτισμένες, πολύ προσεκτικές στη δουλειά τους και δείχνουν πραγματικό ενδιαφέρον για τον ασθενή. Ο χώρος είναι πεντακάθαρος και σύγχρονος, ενώ η αντιμετώπισή τους συνδυάζει ανθρώπινη προσέγγιση και υψηλό επίπεδο επιστημονικής φροντίδας. Εξήγησαν τα πάντα με υπομονή και έκαναν τη διαδικασία εντελώς ανώδυνη και ευχάριστη. Τις συστήνω ανεπιφύλακτα σε όποιον ψάχνει οδοντιάτρους που εμπνέουν εμπιστοσύνη και προσφέρουν πραγματικά ποιοτική φροντίδα. Άρτεμις και Μυρσίνη, σας ευχαριστώ πολύ!"],
-["Ρανια","10.0","Οι οδοντίατροι Άρτεμις και Μυρσίνη είναι άψογες επαγγελματίες και εμπνέουν απόλυτη εμπιστοσύνη. Κάθε φορά που πηγαίνω για καθαρισμό είναι μια πολύ ωραία εμπειρία και νιώθω απόλυτη ασφάλεια στα χέρια τους. Εξηγούν τα πάντα με σαφήνεια, δείχνουν πραγματικό ενδιαφέρον και σε κάνουν να νιώθεις άνετα. Το ιατρείο είναι σύγχρονο, άρτια οργανωμένο and πεντακάθαρο. Τις συστήνω ανεπιφύλακτα!"],
+["Ρανια","10.0","Οι οδοντίατροι Άρτεμις και Μυρσίνη είναι άψογες επαγγελματίες και εμπνέουν απόλυτη εμπιστοσύνη. Κάθε φορά που πηγαίνω για καθαρισμό είναι μια πολύ ωραία εμπειρία και νιώθω απόλυτη ασφάλεια στα χέρια τους. Εξηγούν τα πάντα με σαφήνεια, δείχνουν πραγματικό ενδιαφέρον και σε κάνουν να νιώθεις άνετα. Το ιατρείο είναι σύγχρονο, άρτια οργανωμένο και πεντακάθαρο. Τις συστήνω ανεπιφύλακτα!"],
 ["Κωνσταντίνος Ραφαήλ","10.0","Τα κορίτσια πάνε το extra mile με τακτική επικοινωνία που εμπνέει σιγουριά, ακόμα και σε δύσκολες καταστάσεις. Προτείνω Dental Philosophy ανεπιφύλακτα. :)"],
 ["Γεωργία","10.0","Πήγα για διόρθωση σε όψεις ρητίνης και η δουλειά που έγινε ήταν εξαιρετική !"],
 ["Μαρία","10.0","Πάρα πολύ ευχαριστημένη με την φροντίδα και το αποτέλεσμα που είχε ο καθαρισμός και η φθορίωση των δοντιών μου !"],
