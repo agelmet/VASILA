@@ -376,7 +376,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   .about-img{margin-bottom:26px}
   .ct-map{position:static}
   .ct-map iframe{height:380px}
-  .hero-badge{position:static;display:inline-block;margin-top:28px;animation:rise 1s var(--ease-out) 3.4s forwards}
+  .hero-badge{display:none}
   header{align-items:center}
   .hero-in{padding-bottom:110px;padding-top:120px}
 }
@@ -399,12 +399,14 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
 
 <div id="progress"></div>
 
+<!-- Preloader -->
 <div id="preloader" aria-hidden="true">
   <img class="pl-logo" src="https://github.com/agelmet/VASILA/blob/main/esada.png?raw=true" alt="Dental Philosophy">
   <div class="pl-name">Dental <i>Philosophy</i></div>
   <svg viewBox="0 0 150 44"><path d="M6 8 C 40 52, 110 52, 144 8"/></svg>
 </div>
 
+<!-- Nav -->
 <nav id="nav">
   <a href="#top" class="nav-brand">
     <img src="https://github.com/agelmet/VASILA/blob/main/esada.png?raw=true" alt="Dental Philosophy logo">
@@ -429,6 +431,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   <button id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
+<!-- Mobile menu -->
 <div id="mmenu" aria-hidden="true">
   <button id="mclose" aria-label="Close menu"><svg viewBox="0 0 20 20"><path d="M3 3 L17 17 M17 3 L3 17"/></svg></button>
   <a href="#about"><span data-el>Το Ιατρείο</span><span data-en>The Practice</span></a>
@@ -444,6 +447,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   </div>
 </div>
 
+<!-- Hero -->
 <header id="top">
   <div class="hero-bg" id="heroBg"></div>
   <div class="hero-scrim"></div>
@@ -480,6 +484,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   <div class="hero-scroll"><span data-el>Κύλιση</span><span data-en>Scroll</span></div>
 </header>
 
+<!-- Marquee -->
 <div class="marquee" aria-hidden="true">
   <div class="mq-track" id="mqTrack">
     <div class="mq-set" style="display:flex">
@@ -494,6 +499,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   </div>
 </div>
 
+<!-- About -->
 <section id="about">
   <div class="wrap">
     <div class="about-grid">
@@ -527,6 +533,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
 
 <svg class="arc-divider" viewBox="0 0 200 52" aria-hidden="true"><path d="M10 10 C 60 62, 140 62, 190 10"/></svg>
 
+<!-- Doctors -->
 <section id="doctors">
   <div class="wrap">
     <div class="doc-head">
@@ -581,6 +588,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   </div>
 </section>
 
+<!-- Philosophy -->
 <section id="philosophy">
   <div class="wrap">
     <div class="eyebrow rv" style="color:var(--mint)"><span data-el>Η Φιλοσοφια μας</span><span data-en>Our Philosophy</span></div>
@@ -616,6 +624,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   </div>
 </section>
 
+<!-- Services -->
 <section id="services">
   <div class="wrap">
     <div class="eyebrow rv"><span data-el>Υπηρεσιες</span><span data-en>Services</span></div>
@@ -681,6 +690,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
 
 <svg class="arc-divider" viewBox="0 0 200 52" aria-hidden="true"><path d="M10 10 C 60 62, 140 62, 190 10"/></svg>
 
+<!-- Space -->
 <section id="space">
   <div class="wrap">
     <div class="eyebrow rv"><span data-el>Ο Χωρος</span><span data-en>The Space</span></div>
@@ -696,6 +706,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   </div>
 </section>
 
+<!-- Reviews -->
 <section id="reviews">
   <div class="wrap">
     <div class="rev-topline">
@@ -729,6 +740,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   </div>
 </section>
 
+<!-- Contact -->
 <section id="contact">
   <div class="wrap">
     <div class="ct-grid">
@@ -805,6 +817,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   </div>
 </section>
 
+<!-- Footer -->
 <footer>
   <div class="ft-in">
     <div class="ft-top">
@@ -827,6 +840,7 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   </div>
 </footer>
 
+<!-- Lightbox -->
 <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
   <button class="lb-btn" id="lb-close" aria-label="Close"><svg viewBox="0 0 20 20"><path d="M3 3 L17 17 M17 3 L3 17"/></svg></button>
   <button class="lb-btn" id="lb-prev" aria-label="Previous"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
