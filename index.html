@@ -63,7 +63,7 @@ body.en [data-el]{display:none !important}
 body:not(.en) [data-en]{display:none !important}
 
 /* ---------- Preloader ---------- */
-#preloader{position:fixed;inset:0;z-index:9999;background:var(--ink-deep);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;transition:opacity .8s var(--ease),visibility .8s}
+#preloader{position:fixed;inset:0;z-index:9999;background:var(--porcelain);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;transition:opacity .8s var(--ease),visibility .8s}
 #preloader.done{opacity:0;visibility:hidden}
 #preloader .pl-logo{width:auto;height:220px;object-fit:contain;opacity:0;animation:plIn 1s var(--ease-out) .1s forwards}
 #preloader svg{width:150px;height:44px;overflow:visible}
@@ -210,14 +210,10 @@ h2 em{font-style:italic;font-weight:400;color:var(--brass)}
 .doc-photo .dp-img{border-radius:24px;overflow:hidden;box-shadow:0 30px 70px rgba(14,44,42,.2)}
 .doc-photo img{width:100%;height:auto;object-fit:contain;transition:transform 1.1s var(--ease)}
 .doc-photo:hover img{transform:scale(1.03)}
-.doc-photo .dp-role{position:absolute;top:20px;left:20px;background:rgba(9,32,32,.72);backdrop-filter:blur(8px);color:var(--mint);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:9px 16px;border-radius:100px;border:1px solid rgba(168,213,201,.3);z-index:2}
 .doc-info .dn{font-family:var(--ff-display);font-weight:400;font-size:clamp(28px,3.4vw,42px);color:var(--ink);line-height:1.15}
 .doc-info .dn i{font-style:italic;color:var(--brass);font-weight:300}
 .doc-info .dq{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);font-weight:700;margin:10px 0 18px}
 .doc-info p{color:var(--text-soft);font-weight:300;margin-bottom:14px}
-.doc-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.doc-tags span{font-size:12.5px;font-weight:500;color:var(--ink);background:var(--white);border:1px solid rgba(14,44,42,.14);border-radius:100px;padding:8px 16px;transition:all .3s var(--ease)}
-.doc-tags span:hover{background:var(--ink);color:var(--mint);transform:translateY(-2px)}
 
 /* ---------- Philosophy ---------- */
 #philosophy{background:var(--ink);color:var(--porcelain);overflow:hidden}
@@ -467,15 +463,15 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   <div class="hero-in">
     <div class="hero-eyebrow"><span data-el>Χειρουργοι Οδοντιατροι · Κολωνακι</span><span data-en>Dental Surgeons · Kolonaki, Athens</span></div>
     <h1 data-el>
-      <span class="w"><i style="animation-delay:2.05s">Το</i></span> <span class="w"><i style="animation-delay:2.15s">χαμόγελό</i></span> <span class="w"><i style="animation-delay:2.25s">σας,</i></span><br>
-      <span class="w"><i style="animation-delay:2.4s">με</i></span> <em><span class="w"><i style="animation-delay:2.5s">φιλοσοφία</i></span><svg viewBox="0 0 300 30" preserveAspectRatio="none"><path d="M4 6 C 90 34, 210 34, 296 6"/></svg></em><span class="w"><i style="animation-delay:2.6s">.</i></span>
+      <span class="w"><i style="animation-delay:2.05s">Δημιουργώντας</i></span> <span class="w"><i style="animation-delay:2.15s">το</i></span> <span class="w"><i style="animation-delay:2.25s">χαμόγελο</i></span><br>
+      <span class="w"><i style="animation-delay:2.4s">που</i></span> <em><span class="w"><i style="animation-delay:2.5s">σας αξίζει</i></span><svg viewBox="0 0 300 30" preserveAspectRatio="none"><path d="M4 6 C 90 34, 210 34, 296 6"/></svg></em><span class="w"><i style="animation-delay:2.6s">.</i></span>
     </h1>
     <h1 data-en>
-      <span class="w"><i style="animation-delay:2.05s">Your</i></span> <span class="w"><i style="animation-delay:2.15s">smile,</i></span><br>
-      <span class="w"><i style="animation-delay:2.35s">with</i></span> <em><span class="w"><i style="animation-delay:2.45s">philosophy</i></span><svg viewBox="0 0 300 30" preserveAspectRatio="none"><path d="M4 6 C 90 34, 210 34, 296 6"/></svg></em><span class="w"><i style="animation-delay:2.55s">.</i></span>
+      <span class="w"><i style="animation-delay:2.05s">Creating</i></span> <span class="w"><i style="animation-delay:2.15s">the</i></span> <span class="w"><i style="animation-delay:2.25s">smile</i></span><br>
+      <span class="w"><i style="animation-delay:2.4s">you</i></span> <em><span class="w"><i style="animation-delay:2.5s">deserve</i></span><svg viewBox="0 0 300 30" preserveAspectRatio="none"><path d="M4 6 C 90 34, 210 34, 296 6"/></svg></em><span class="w"><i style="animation-delay:2.6s">.</i></span>
     </h1>
-    <p class="hero-sub" data-el>Στην καρδιά του Κολωνακίου, οι αδελφές Μυρσίνη & Άρτεμις Βασίλα συνδυάζουν επιστημονική ακρίβεια, ψηφιακή τεχνολογία και πραγματική ανθρώπινη φροντίδα — για μια εμπειρία στον οδοντίατρο που θα αλλάξει την ιδέα που είχατε μέχρι σήμερα.</p>
-    <p class="hero-sub" data-en>In the heart of Kolonaki, sisters Myrsini & Artemis Vasila combine scientific precision, digital technology and genuinely human care — for a dental experience that will change everything you thought you knew about visiting the dentist.</p>
+    <p class="hero-sub" data-el>Στην καρδιά του Κολωνακίου, οι αδελφές Μυρσίνη & Άρτεμις Βασίλα συνδυάζουν επιστημονική ακρίβεια, ψηφιακή τεχνολογία και πραγματική ανθρώπινη φροντίδα — για μια εμπειρία στον οδοντίατρο που θα αλλάξει την ιδέα που μπορεί να είχατε.</p>
+    <p class="hero-sub" data-en>In the heart of Kolonaki, sisters Myrsini & Artemis Vasila combine scientific precision, digital technology and genuinely human care — for a dental experience that will change the idea you might have had.</p>
     <div class="hero-ctas">
       <a class="btn btn-primary" href="https://www.doctoranytime.gr/d/Odontiatros/dental-philosophy-myrsini-artemis-vasila?autobook=1" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
@@ -544,52 +540,47 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
   <div class="wrap">
     <div class="doc-head">
       <div class="eyebrow rv"><span data-el>Οι Ιατροι</span><span data-en>The Doctors</span></div>
-      <h2 class="rv d1" data-el>Γνωρίστε τις <em>αδελφές Βασίλα</em></h2>
-      <h2 class="rv d1" data-en>Meet the <em>Vasila sisters</em></h2>
-      <p class="lead rv d2" data-el>Κάθε μία με τη δική της εξειδίκευση, και οι δύο με το ίδιο πάθος: να νιώθετε ασφάλεια σε κάθε ραντεβού.</p>
-      <p class="lead rv d2" data-en>Each with her own specialisation, both with the same passion: making you feel safe at every appointment.</p>
+      <h2 class="rv d1" data-el>Γνωρίστε τις <em>ιατρούς</em></h2>
+      <h2 class="rv d1" data-en>Meet the <em>doctors</em></h2>
+      <p class="lead rv d2" data-el>Ως αδελφές και οδοντίατροι, μοιραζόμαστε το ίδιο ενδιαφέρον για μια ολιστική φροντίδα του χαμόγελου.</p>
+      <p class="lead rv d2" data-en>As sisters and dentists, we share the same passion for holistic smile care.</p>
+      <p class="lead rv d3" data-el>Μετρώντας ήδη 30 χρόνια επιτυχημένης λειτουργίας από τον πατέρα τους, συνεχίζουν σήμερα με υπερηφάνεια το έργο του, συνδυάζοντας την οικογενειακή παρακαταθήκη με τις πιο σύγχρονες ιατρικές υπηρεσίες και την ίδια πάντα σχέση εμπιστοσύνης.</p>
+      <p class="lead rv d3" data-en>Counting 30 years of successful practice by their father, they proudly continue his work today, combining the family legacy with the most modern medical services and the same enduring relationship of trust.</p>
     </div>
 
     <div class="doc-card">
       <div class="doc-photo rv-scale lb-item" data-cap-el="Άρτεμις Βασίλα, DDS, MSc" data-cap-en="Artemis Vasila, DDS, MSc">
         <div class="dp-img"><img src="https://raw.githubusercontent.com/agelmet/VASILA/fc84873bcfff13521b10e3b487ed60d8c0378787/arf1.jpg" alt="Άρτεμις Βασίλα - Οδοντίατρος" loading="lazy"></div>
-        <div class="dp-role"><span data-el>Ορθοδοντικη</span><span data-en>Orthodontics</span></div>
       </div>
       <div class="doc-info">
         <div class="dn rv"><span data-el>Άρτεμις</span><span data-en>Artemis</span> <i><span data-el>Βασίλα</span><span data-en>Vasila</span></i></div>
         <div class="dq rv d1">DDS, MSc · <span data-el>Χειρουργος Οδοντιατρος</span><span data-en>Dental Surgeon</span></div>
         <p class="rv d2" data-el>Αποφοίτησε με <b style="color:var(--ink);font-weight:600">Άριστα</b> από το Ιατρικό Πανεπιστήμιο της Σόφιας το 2018 και συνέχισε με μεταπτυχιακές σπουδές στην Ορθοδοντική (MSc) στο Πανεπιστήμιο του Κρεμς, στην Αυστρία.</p>
         <p class="rv d2" data-en>She graduated <b style="color:var(--ink);font-weight:600">with Honours</b> from the Medical University of Sofia in 2018 and continued with postgraduate studies in Orthodontics (MSc) at the University of Krems, Austria.</p>
-        <p class="rv d3" data-el>Με εμπειρία από ιατρεία αποκλειστικής άσκησης Ενδοδοντίας και Ορθοδοντικής, εστιάζει στην ολοκληρωμένη ορθοδοντική αντιμετώπιση παιδιών, εφήβων και ενηλίκων — με έμφαση στη λειτουργικότητα, την αισθητική αρμονία και τη μακροχρόνια σταθερότητα του αποτελέσματος.</p>
-        <p class="rv d3" data-en>With experience from practices dedicated exclusively to Endodontics and Orthodontics, she focuses on comprehensive orthodontic treatment for children, teenagers and adults — with an emphasis on function, aesthetic harmony and long-term stability of the result.</p>
-        <div class="doc-tags rv d4">
-          <span data-el>Αόρατοι Νάρθηκες</span><span data-en>Clear Aligners</span>
-          <span data-el>Ορθοδοντική Ενηλίκων</span><span data-en>Adult Orthodontics</span>
-          <span data-el>Ενδοδοντία</span><span data-en>Endodontics</span>
-          <span data-el>MSc Κρεμς, Αυστρία</span><span data-en>MSc Krems, Austria</span>
-        </div>
+        <p class="rv d3" data-el>Με εμπειρία από ιατρεία αποκλειστικής άσκησης Ορθοδοντικής, εστιάζει στην ολοκληρωμένη ορθοδοντική αντιμετώπιση παιδιών, εφήβων και ενηλίκων — με έμφαση στη λειτουργικότητα, την αισθητική αρμονία και τη μακροχρόνια σταθερότητα του αποτελέσματος.</p>
+        <p class="rv d3" data-en>With experience from practices dedicated exclusively to Orthodontics, she focuses on comprehensive orthodontic treatment for children, teenagers and adults — with an emphasis on function, aesthetic harmony and long-term stability of the result.</p>
       </div>
     </div>
 
     <div class="doc-card flip">
       <div class="doc-photo rv-scale lb-item" data-cap-el="Μυρσίνη Βασίλα, BSc, DDS" data-cap-en="Myrsini Vasila, BSc, DDS">
         <div class="dp-img"><img src="https://raw.githubusercontent.com/agelmet/VASILA/fc84873bcfff13521b10e3b487ed60d8c0378787/myrsa1.jpg" alt="Μυρσίνη Βασίλα - Οδοντίατρος" loading="lazy"></div>
-        <div class="dp-role"><span data-el>Παιδοδοντια</span><span data-en>Paediatric Dentistry</span></div>
       </div>
       <div class="doc-info">
         <div class="dn rv"><span data-el>Μυρσίνη</span><span data-en>Myrsini</span> <i><span data-el>Βασίλα</span><span data-en>Vasila</span></i></div>
         <div class="dq rv d1">BSc, DDS · <span data-el>Χειρουργος Οδοντιατρος</span><span data-en>Dental Surgeon</span></div>
         <p class="rv d2" data-el>Απόφοιτος του Τμήματος Βιολογίας του Πανεπιστημίου Κρήτης και του Ιατρικού Πανεπιστημίου της Σόφιας, από όπου αποφοίτησε με <b style="color:var(--ink);font-weight:600">Άριστα</b> το 2019, με Δίπλωμα στην Παιδοδοντική Οδοντιατρική από το Διεθνές Πανεπιστήμιο της Βαρκελώνης (UIC).</p>
         <p class="rv d2" data-en>A graduate of the Biology Department of the University of Crete and the Medical University of Sofia, from which she graduated <b style="color:var(--ink);font-weight:600">with Honours</b> in 2019, holding a Diploma in Paediatric Dentistry from the International University of Barcelona (UIC).</p>
-        <p class="rv d3" data-el>Η κλινική της δραστηριότητα επικεντρώνεται στη φροντίδα βρεφών, παιδιών, εφήβων και ατόμων με αναπηρίες ή αυξημένες ανάγκες φροντίδας — με υπομονή, ενσυναίσθηση και απόλυτο σεβασμό στις ιδιαίτερες ανάγκες κάθε μικρού ασθενή.</p>
-        <p class="rv d3" data-en>Her clinical work focuses on the care of infants, children, teenagers and people with disabilities or increased care needs — with patience, empathy and absolute respect for the unique needs of every young patient.</p>
-        <div class="doc-tags rv d4">
-          <span data-el>Παιδοδοντία</span><span data-en>Paediatric Dentistry</span>
-          <span data-el>ΑμεΑ & Ειδικές Ανάγκες</span><span data-en>Special Care Dentistry</span>
-          <span data-el>Πρόληψη & Φθορίωση</span><span data-en>Prevention & Fluoride</span>
-          <span data-el>Δίπλωμα UIC Βαρκελώνης</span><span data-en>UIC Barcelona Diploma</span>
-        </div>
+        <p class="rv d3" data-el>Συνεργάζεται με ιδιωτικά παιδοδοντιατρικά ιατρεία και διαθέτει σημαντική εμπειρία στη διαχείριση μικρών ασθενών, προσφέροντας θεραπεία με υπομονή, ενσυναίσθηση και απόλυτο σεβασμό στις ιδιαίτερες ανάγκες κάθε παιδιού.</p>
+        <p class="rv d3" data-en>She collaborates with private pediatric dental clinics and has significant experience in managing young patients, offering treatment with patience, empathy, and absolute respect for the unique needs of every child.</p>
+        <p class="rv d4" data-el>Η κλινική της δραστηριότητα συμπεριλαμβάνει τη φροντίδα βρεφών, παιδιών, εφήβων και ατόμων με αναπηρίες ή αυξημένες ανάγκες φροντίδας — με υπομονή, ενσυναίσθηση και απόλυτο σεβασμό στις ιδιαίτερες ανάγκες κάθε μικρού ασθενή.</p>
+        <p class="rv d4" data-en>Her clinical work includes the care of infants, children, teenagers and people with disabilities or increased care needs — with patience, empathy and absolute respect for the unique needs of every young patient.</p>
       </div>
+    </div>
+    
+    <div class="doc-shared" style="margin-top:clamp(40px,6vw,60px);text-align:center;max-width:800px;margin-left:auto;margin-right:auto;">
+      <p class="lead rv" data-el>Και οι δύο ιατροί διατηρούν έντονο ενδιαφέρον για τη συνεχή επιστημονική τους εξέλιξη, συμμετέχοντας τακτικά σε συνέδρια και εκπαιδευτικά προγράμματα στην Ελλάδα και το εξωτερικό, με στόχο την παροχή σύγχρονων και τεκμηριωμένων θεραπευτικών λύσεων στους ασθενείς τους.</p>
+      <p class="lead rv" data-en>Both doctors maintain a strong interest in their continuous scientific development, regularly participating in conferences and educational programs in Greece and abroad, with the goal of providing modern and evidence-based therapeutic solutions to their patients.</p>
     </div>
   </div>
 </section>
@@ -636,20 +627,20 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
     <div class="eyebrow rv"><span data-el>Υπηρεσιες</span><span data-en>Services</span></div>
     <h2 class="rv d1" data-el>Ολοκληρωμένη φροντίδα, <em>για κάθε χαμόγελο</em></h2>
     <h2 class="rv d1" data-en>Complete care, <em>for every smile</em></h2>
-    <p class="lead rv d2" data-el>Από την πρόληψη μέχρι την αισθητική αποκατάσταση — όλες οι σύγχρονες οδοντιατρικές υπηρεσίες, κάτω από μία στέγη.</p>
-    <p class="lead rv d2" data-en>From prevention to aesthetic restoration — every modern dental service, under one roof.</p>
+    <p class="lead rv d2" data-el>Από την πρόληψη μέχρι την πλήρη αποκατάσταση και θεραπεία — όλες οι σύγχρονες οδοντιατρικές υπηρεσίες, κάτω από μία στέγη.</p>
+    <p class="lead rv d2" data-en>From prevention to complete restoration and treatment — every modern dental service, under one roof.</p>
     <div class="srv-grid">
       <div class="srv rv d1">
         <div class="s-ico"><svg viewBox="0 0 24 24"><path d="M12 3a7 7 0 0 1 7 7c0 3-1 4-1.5 7-.3 1.8-1 4-2.5 4s-1.5-2-3-2-1.5 2-3 2-2.2-2.2-2.5-4C6 14 5 13 5 10a7 7 0 0 1 7-7z"/><path d="M9 8c1-1 2-1 3 0"/></svg></div>
         <h3 data-el>Καθαρισμός & Πρόληψη</h3><h3 data-en>Cleaning & Prevention</h3>
-        <p data-el>Λεπτομερής καθαρισμός με ελαφρύ χέρι, στίλβωση, φθορίωση και σοδοβολή — η βάση για υγιή δόντια για μια ζωή.</p>
-        <p data-en>Gentle, thorough cleaning, polishing, fluoride treatment and air polishing — the foundation of lifelong dental health.</p>
+        <p data-el>Λεπτομερής καθαρισμός, στίλβωση, σοδοβολή και φθορίωση — η βάση για υγιή δόντια για μια ζωή. Θεραπείες ουλίτιδας και περιοδοντίτιδας.</p>
+        <p data-en>Thorough cleaning, polishing, air polishing and fluoride treatment — the foundation of lifelong dental health. Gingivitis and periodontitis treatments.</p>
       </div>
       <div class="srv rv d2">
         <div class="s-ico"><svg viewBox="0 0 24 24"><path d="M12 2l1.8 5.5H20l-4.7 3.4 1.8 5.6L12 13l-5.1 3.5 1.8-5.6L4 7.5h6.2z"/></svg></div>
         <h3 data-el>Λεύκανση Δοντιών</h3><h3 data-en>Teeth Whitening</h3>
-        <p data-el>Λεύκανση στο ιατρείο με ενισχυτική λάμπα ή με εξατομικευμένους νάρθηκες στο σπίτι — και συνδυασμός μεθόδων για βέλτιστο αποτέλεσμα.</p>
-        <p data-en>In-office whitening with an accelerator lamp or custom take-home trays — with combined protocols for the best result.</p>
+        <p data-el>Λεύκανση στο ιατρείο με συσκευή ενισχυμένου φωτός ή με εξατομικευμένους νάρθηκες στο σπίτι — και συνδυασμός μεθόδων για βέλτιστο αποτέλεσμα.</p>
+        <p data-en>In-office whitening with an enhanced light device or custom take-home trays — with combined protocols for the best result.</p>
         <span class="s-badge" data-el>Εξειδίκευση</span><span class="s-badge" data-en>Specialisation</span>
       </div>
       <div class="srv rv d3">
@@ -673,14 +664,14 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
       <div class="srv rv d2">
         <div class="s-ico"><svg viewBox="0 0 24 24"><path d="M12 3v6M12 9c-3 0-3 4-3 6s1 6 3 6 3-4 3-6-0-6-3-6z"/><path d="M9 5l6-1"/></svg></div>
         <h3 data-el>Ενδοδοντία</h3><h3 data-en>Endodontics</h3>
-        <p data-el>Απονευρώσεις και ενδοδοντικές θεραπείες με σύγχρονα μέσα και ακρίβεια — για να σωθεί το φυσικό σας δόντι, χωρίς ταλαιπωρία.</p>
-        <p data-en>Root canal treatments performed with modern equipment and precision — saving your natural tooth, without the ordeal.</p>
+        <p data-el>Απονευρώσεις και ενδοδοντικές θεραπείες με σύγχρονα μέσα και ακρίβεια — για να σωθεί το φυσικό σας δόντι, χωρίς ταλαιπωρία. Για σύνθετα περιστατικά ενδοδοντικής θεραπείας, το ιατρείο συνεργάζεται με εξειδικευμένο ενδοδοντολόγο.</p>
+        <p data-en>Root canal treatments performed with modern equipment and precision — saving your natural tooth, without the ordeal. For complex endodontic treatment cases, the practice collaborates with a specialized endodontist.</p>
       </div>
       <div class="srv rv d3">
         <div class="s-ico"><svg viewBox="0 0 24 24"><path d="M7 21l3-3M14 4l6 6-9 9H5v-6l9-9z"/></svg></div>
         <h3 data-el>Χειρουργική Στόματος</h3><h3 data-en>Oral Surgery</h3>
-        <p data-el>Εξαγωγές δοντιών και φρονιμιτών, καθώς και χειρουργική εξαγωγή έγκλειστων και ημιέγκλειστων δοντιών, με ασφάλεια και σχολαστικότητα.</p>
-        <p data-en>Tooth and wisdom-tooth extractions, including surgical removal of impacted and semi-impacted teeth, performed safely and meticulously.</p>
+        <p data-el>Εξαγωγές δοντιών και φρονιμιτών, καθώς και χειρουργική εξαγωγή έγκλειστων και ημιέγκλειστων δοντιών, με ασφάλεια και σχολαστικότητα. Όλα τα χειρουργικά περιστατικά — από τη χειρουργική τοποθέτηση εμφυτευμάτων έως την αφαίρεση ημιέγκλειστων/έγκλειστων οδόντων — εκτελούνται από Γναθοχειρουργό που ανήκει στην ομάδα του ιατρείου.</p>
+        <p data-en>Tooth and wisdom-tooth extractions, including surgical removal of impacted and semi-impacted teeth, performed safely and meticulously. All surgical cases — from surgical implant placement to the removal of semi-impacted/impacted teeth — are performed by an Oral and Maxillofacial Surgeon who belongs to the practice's team.</p>
       </div>
       <div class="srv rv d4">
         <div class="s-ico"><svg viewBox="0 0 24 24"><path d="M4 16c0-5 3-9 8-9s8 4 8 9"/><rect x="2" y="16" width="20" height="4" rx="2"/></svg></div>
@@ -895,12 +886,14 @@ footer{background:var(--ink-deep);color:rgba(247,245,240,.72);padding:60px clamp
 (function(){
 "use strict";
 
-/* ---------- Reviews data (exactly as written) ---------- */
+/* ---------- Reviews data ---------- */
 var REVIEWS=[
 ["ΒΑΣΙΛΙΚΗ","10.0","Εξαιρετικες οδοντιατροι! Μου τις συνεστησε η αδελφη μου και θα συνεχισω να πηγαινω για οτι χρειαζεται απο εδω και στο εξης!"],
+["Sarah","10.0","Amazing experience! The clinic is spotless, and the doctors are true professionals. Highly recommend!"],
 ["Γεωργία","10.0","Επισκέπτομαι χρόνια το ιατρείο για καθαρισμό δοντιών και ετήσιο check up. Η Μυρσίνη είναι εξαιρετικος επαγγελματίας με γνώση και εμπειρία και πολύ ελαφρύ χέρι. Ο χώρος του ιατρείου βρίσκεται πολύ κεντρικά και είναι πολύ άνετος και πεντακάθαρος. Το συνιστώ ανεπιφύλακτα."],
 ["Ιωάννα","10.0","Άξια επαγγελματίας και άνθρωπος!"],
 ["Κατερίνα","9.8","Και οι δυο κοπελες ηταν πολυ ευγενικες, αρτια καταρτισμενες.Φερθηκαν αψογα τοσο στην 7χρονη κορη μου ,οσο κ σε μενα!"],
+["John M.","10.0","Very gentle and thorough. They explained everything clearly and made me feel completely at ease."],
 ["Παύλος","10.0","Καταπληκτικές κάθε φορά 🧚❤️🪻🌞"],
 ["Γιώργος","10.0","Οι αδελφές Βασίλα είναι εξαίρετες στην εργασία τους και γι' αυτό τις εμπιστευόμαστε οικογενειακώς."],
 ["Κωνσταντίνος","10.0","Ένα μεγάλο ευχαριστώ στην οδοντίατρο για την άψογη εξυπηρέτηση. Το ιατρείο είναι εξοπλισμένο με υπερσύγχρονα μηχανήματα και η καθαριότητα είναι υποδειγματική. Η γιατρός είναι άρτια καταρτισμένη, λεπτομερής στη δουλειά της και επεξηγηματική σε ό,τι κι αν έκανε. Έμεινα απόλυτα ικανοποιημένος από το αποτέλεσμα και τη συνολική εμπειρία!"],
